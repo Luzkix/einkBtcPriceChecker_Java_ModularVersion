@@ -1,0 +1,17 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.5.RELEASE'
+}
+
+dependencies {
+    implementation project(':bitcoinpriceticker-web')
+    implementation project(':bitcoinpriceticker-application')
+    implementation project(':bitcoinpriceticker-domain')
+
+    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    //implementation 'org.springframework.boot:spring-boot-devtools' - i dont miss it nowhere, so what is it for?
+}

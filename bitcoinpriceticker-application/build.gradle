@@ -1,0 +1,12 @@
+dependencies {
+    implementation project(':bitcoinpriceticker-domain')
+
+    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
+
+    implementation 'org.springframework:spring-context' //solved beans issue with @Service annotation
+    implementation 'org.json:json:20171018'
+
+    compileOnly 'org.slf4j:slf4j-api' //i am using slf4j annotation
+    //runtime 'org.slf4j:slf4j-log4j12' //Here not working...Class path contains multiple SLF4J bindings....We use the runtime scope for dependencies that are not needed at compile time, like when we’re compiling against an API and only need the implementation of that API at runtime.
+}
