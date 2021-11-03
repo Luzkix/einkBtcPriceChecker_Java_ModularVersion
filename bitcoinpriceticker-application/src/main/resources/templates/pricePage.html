@@ -7,13 +7,9 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <!--<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">-->
 
     <!-- Own CSS -->
     <link rel="stylesheet" th:href="@{/styles/pricePageStyle.css}"/>
@@ -32,8 +28,6 @@
 
         <div class="btcTextBlock">
             <img id=btcText src="icons/BTCtext.png">
-            <!--<img id=btcText src="icons/Logo3_small.png">-->
-            <!--<span th:text="' / '+*{currency}"></span>-->
         </div>
 
         <div class="priceContainer">
@@ -66,7 +60,7 @@
     var timeInMinutes = today.getHours() + ":" + minutes(today);
     document.getElementById("clock").innerHTML = "🕑" + timeInMinutes;
 
-
+    // reload page once per X sec
     function updatePriceInfo() {
         var actualSec = new Date().getSeconds();
         console.log(actualSec);
@@ -74,7 +68,7 @@
             window.location.reload(false);
         }
     }
-
     setInterval(updatePriceInfo, 1000);
+
 </script>
 </html>

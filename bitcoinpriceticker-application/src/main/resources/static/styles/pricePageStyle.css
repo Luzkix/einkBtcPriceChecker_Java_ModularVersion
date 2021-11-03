@@ -1,5 +1,4 @@
 body {
-/*    font-family: 'Inconsolata', monospace;*/
     font-family: 'Abril Fatface', cursive;
     margin: 0px;
     padding: 0px;
@@ -19,9 +18,6 @@ body {
     height: 100vh;
     margin: 0px;
     padding: 0px;
-
-    /*background-image: url(/icons/Logo3_small.png);*/
-    background-size: contain;
 
     background-size: contain;
     background-position: center;
@@ -78,7 +74,6 @@ body {
     height: 65vh;
     margin: 0px;
     padding: 0vh;
-/*    display: inline-flex;*/
     align-items: center;
 }
 
@@ -90,7 +85,6 @@ body {
     align-items: center;
     margin-top: 2vh;
     margin-bottom: 3vh;
-
 }
 
 #btcPrice {
@@ -104,8 +98,6 @@ body {
     display: inline-flex;
     align-items: center;
     text-align: center;
-
-
 }
 
 .btcChangeBlock {
@@ -139,16 +131,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-size: 15vh;
-    font-weight: normal;
+    font-weight: bold;
 
     display: inline;
     align-items: center;
     text-align: center;
     vertical-align: middle;
-
-    /*font-family: 'Dosis', sans-serif;*/
-    /*letter-spacing: 0.11em;*/
-    font-weight: bold;
 }
 
 .lastUpdatelock {
