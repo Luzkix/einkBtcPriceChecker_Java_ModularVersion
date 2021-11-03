@@ -1,4 +1,3 @@
-include 'bitcoinpriceticker-web'
-include 'bitcoinpriceticker-configuration'
 include 'bitcoinpriceticker-application'
+include 'bitcoinpriceticker-services'
 include 'bitcoinpriceticker-domain'
