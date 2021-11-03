@@ -86,6 +86,7 @@ public class PriceServiceImpl implements PriceService {
           priceChangeSign,currency,lastUpdate);
     }
     catch (Exception e) {
+      log.error("Price json from Coinbase was not successfully converted into BitcoinPriceEntity");
       return null;
     }
   }
